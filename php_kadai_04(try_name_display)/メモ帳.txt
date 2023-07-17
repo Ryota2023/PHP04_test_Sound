@@ -1,0 +1,62 @@
+●構成
+♦・id	int(12)	AUTO_INCREMENT	
+♦・date	datetime
+♦・name	varchar(64)	utf8_unicode_ci	
+content	text	utf8_unicode_ci	
+sleep_time	int(12)
+today_condition	int(12)
+music_title	varchar(128)	utf8_unicode_ci	
+artist	varchar(128)	utf8_unicode_ci	
+music_mood	varchar(64)	utf8_unicode_ci	
+
+
+●SQL入力内容
+＞●一回目　カラム４つからスタート
+
+INSERT INTO 
+t66_music_record
+(id,date,name,content,sleep_time,today_condition,music_title,artist,music_mood)
+VALUES
+(NULL,sysdate(),'ぎりぎりRyota','寝る時間がほしい！',5.5,4,'Think out loud','Ed Sheeran",'心休まる曲');
+
+
+●下記をPHPにコードを入力する
+INSERT INTO 
+gs_bm_table
+(id,date,name,content,sleep_time,today_condition,music_title,artist,music_mood)
+VALUES
+(NULL,sysdate(),:name,:content,:sleep_time,:today_condition,:music_title,:artist,:music_mood);
+
+
+
+
+INSERT INTO 
+music_record_a_day
+(id,date,name,content,sleep_time,condition, condition_c, music_title, music_mood)
+VALUES
+(NULL,sysdate(),'ぎりぎりRyota','Gsの時間がとれなくてほんと泣く。もう日中の仕事のスタイルを変える',4,2,'オーシャンゼリゼ','リラックスできて陽気な曲');
+
+
+●これは授業で使ってちゃんと動いているINSERT
+INSERT INTO gs_an_table
+(id,name,email,content,date)VALUES
+(NULL,'Jgasd','cd
+s.com','kjfe',sysdate());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
